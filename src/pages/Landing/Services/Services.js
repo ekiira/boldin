@@ -13,7 +13,7 @@ function Services() {
     <div className="services py-5" id="services">
       <div className="container py-5">
         <div className="row pb-5">
-          <div className="col-md-7">
+          <div className="col-md-7" data-aos="fade-right">
             <p className="title">Our Services</p>
             <p className="text">
               Excellently built products that perform at scale{" "}
@@ -56,7 +56,7 @@ function Services() {
                   <div className="d-flex align-items-center h-100 px-4">
                     <div>
                       <img src={image} alt="service-icon" />
-                      <p className="service-title mt-5">
+                      <p className="service-title mt-5" data-aos="fade-right">
                         {serviceOne} <br /> {serviceTwo}
                       </p>
                     </div>

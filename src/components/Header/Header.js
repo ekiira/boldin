@@ -20,7 +20,7 @@ function Header({ setOpenRequestForm, setNavMenu }) {
               className="work-text mr-3 d-none d-lg-flex"
               onClick={() => setOpenRequestForm(true)}
             >
-              work with us{" "}
+              Work with us{" "}
               <span>
                 <img src={rocket} alt="rocket" />
               </span>

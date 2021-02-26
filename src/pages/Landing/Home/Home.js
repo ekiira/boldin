@@ -1,8 +1,8 @@
 import "./home.scss";
 
-import spaceman from "../../../assets/images/spaceman.png";
+import spaceman from "../../../assets/images/spaceman (1).svg";
 import rocket from "../../../assets/images/rocket.png";
-import scroll from "../../../assets/images/scroll.png";
+import scroll from "../../../assets/images/scroll.svg";
 
 function Home() {
   return (

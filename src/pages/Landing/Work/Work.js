@@ -9,7 +9,7 @@ function Work() {
       <div className="container py-5">
         <div className="row">
           <div className="col-md-7">
-            <div className="pb-5">
+            <div className="pb-5" data-aos="fade-right">
               <p className="work-title">Our Work</p>
               <p className="work-text">
                 We have empowered bold ideas and products in various markets see
@@ -20,7 +20,10 @@ function Work() {
         </div>
         <div className="row">
           <div className="col-12 col-md-7 py-3 py-lg-0">
-            <div className="d-flex h-100 align-items-center">
+            <div
+              className="d-flex h-100 align-items-center"
+              data-aos="fade-right"
+            >
               <div>
                 <p className="work-title">Boldin</p>
                 <p className="work-text">
@@ -41,7 +44,7 @@ function Work() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-5 py-3 py-lg-0">
+          <div className="col-12 col-md-5 py-3 py-lg-0" data-aos="zoom-in-left">
             <img src={work} alt="mask-group" className="img-fluid" />
           </div>
         </div>

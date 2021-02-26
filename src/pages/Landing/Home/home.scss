@@ -33,34 +33,21 @@
   }
 }
 
-.space {
-  background: url("../../../assets//images/space-man-bg.png") no-repeat;
-  background-size: contain;
-}
-
 .space-man {
   width: 400px;
-  overflow: hidden;
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
+
+  &:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
 }
 
 .scroll {
   span {
     color: #4452fe;
-    font-size: 16px;
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
+    font-size: 15px;
+    text-decoration: underline;
   }
 }
 
@@ -73,6 +60,21 @@
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 

@@ -2,12 +2,14 @@
   background: #ffffff;
 
   .work-text {
-    color: #000000;
     font-size: 18px;
-    font-weight: bold;
+    color: #000000;
     cursor: pointer;
     display: flex;
     align-items: center;
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   .menubtn {
