@@ -46,7 +46,11 @@ function Blog() {
                 <div className="mt-4">
                   <button className="btn sub">
                     Subscribe
-                    <img src={rocket} alt="rocket" className="ml-3 img-fluid" />
+                    <img
+                      src={rocket}
+                      alt="rocket"
+                      className="ml-3 img-fluid rocket"
+                    />
                   </button>
                 </div>
               </div>

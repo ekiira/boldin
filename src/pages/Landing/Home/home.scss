@@ -5,6 +5,10 @@
   background-size: cover;
   margin-top: 50px;
 
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
   .intro {
     p {
       font-size: 70px;
@@ -19,6 +23,13 @@
     width: 200px;
     height: 60px;
     border-radius: 0;
+    border: 1px solid #4452fe;
+
+    &:hover {
+      background-color: #fff;
+      color: #4452fe;
+      border: 1px solid #4452fe;
+    }
   }
 }
 
@@ -50,6 +61,18 @@
   }
   100% {
     transform: translatey(0px);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 

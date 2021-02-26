@@ -10,7 +10,7 @@ import serviceF from ".././../../assets/images/servicesB.png";
 
 function Services() {
   return (
-    <div className="services py-5" id='services'>
+    <div className="services py-5" id="services">
       <div className="container py-5">
         <div className="row pb-5">
           <div className="col-md-7">

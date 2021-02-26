@@ -31,7 +31,11 @@ function Work() {
                 <div className="pt-3">
                   <button className="btn view-btn">
                     View Case Study
-                    <img src={rocket} alt="rocket" className="ml-3 img-fluid" />
+                    <img
+                      src={rocket}
+                      alt="rocket"
+                      className="ml-3 img-fluid rocket"
+                    />
                   </button>
                 </div>
               </div>

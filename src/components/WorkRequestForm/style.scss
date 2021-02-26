@@ -1,0 +1,78 @@
+.workRequest {
+  height: 100%;
+  background: #4452fe url("../../assets/images/launch.svg") no-repeat;
+  background-position: right;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  .hello {
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .send-btn {
+    color: #4452fe;
+    font-size: 16px;
+    background-color: #ffffff;
+    font-weight: bold;
+    width: 230px;
+    height: 60px;
+    border-radius: 0;
+  }
+
+  .request-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+      font-family: "DM Sans Light";
+      font-size: 15px;
+    }
+  }
+
+  .request-label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 767px) {
+    background: #4452fe;
+    height: 100%;
+    .hello {
+      font-size: 50px;
+    }
+  }
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

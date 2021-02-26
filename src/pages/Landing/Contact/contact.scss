@@ -2,6 +2,7 @@
   background: #f2f7fc url("../../../assets/images/uni.png") no-repeat;
   background-position: right;
   height: 100%;
+
   .talk-btn {
     background: #4452fe;
     font-size: 16px;
@@ -10,15 +11,22 @@
     width: 200px;
     height: 60px;
     border-radius: 0;
+    border: 1px solid #4452fe;
+
+    &:hover {
+      background-color: #fff;
+      color: #4452fe;
+      border: 1px solid #4452fe;
+    }
   }
 
   .contact-title {
-    font-family: 'DM Sans Light';
+    font-family: "DM Sans Light";
     color: #000000;
     font-size: 24px;
   }
   .contact-text {
-      font-family: 'DM Sans Light';
+    font-family: "DM Sans Light";
     color: #000000;
     font-size: 32px;
   }
@@ -26,7 +34,6 @@
 
 @media screen and (max-width: 1023px) {
   .contact {
-  background: #f2f7fc;
-
+    background: #f2f7fc;
   }
 }

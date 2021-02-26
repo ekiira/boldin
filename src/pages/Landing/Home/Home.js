@@ -26,7 +26,7 @@ function Home() {
                       <img
                         src={rocket}
                         alt="rocket"
-                        className="ml-3 img-fluid"
+                        className="ml-3 img-fluid rocket"
                       />
                     </button>
                   </div>
