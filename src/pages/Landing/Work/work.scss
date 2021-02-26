@@ -1,0 +1,34 @@
+.work {
+  background: url("../../../assets/images/work-bg.png"),
+    linear-gradient(180deg, #1f89ea -4.96%, #5f65ff 100%);
+  width: 100%;
+  background-size: cover;
+
+  .work-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .work-text {
+    color: #fff;
+    font-size: 32px;
+    font-family: "DM Sans Light";
+  }
+
+  .sub-text {
+    font-size: 20px;
+    color: #fff;
+    font-family: "DM Sans Light";
+  }
+
+  .view-btn {
+    color: #4452fe;
+    font-size: 16px;
+    background-color: #ffffff;
+    font-weight: bold;
+    width: 230px;
+    height: 60px;
+    border-radius: 0;
+  }
+}

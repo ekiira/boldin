@@ -1,0 +1,32 @@
+.contact {
+  background: #f2f7fc url("../../../assets/images/uni.png") no-repeat;
+  background-position: right;
+  height: 100%;
+  .talk-btn {
+    background: #4452fe;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    border-radius: 0;
+  }
+
+  .contact-title {
+    font-family: 'DM Sans Light';
+    color: #000000;
+    font-size: 24px;
+  }
+  .contact-text {
+      font-family: 'DM Sans Light';
+    color: #000000;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .contact {
+  background: #f2f7fc;
+
+  }
+}

@@ -1,0 +1,49 @@
+.blog {
+  font-family: "DM Sans Light";
+  .blog-title {
+    font-size: 24px;
+    color: #000000;
+  }
+  .blog-text {
+    font-size: 32px;
+  }
+  .posts {
+    p {
+      padding: 10px 0;
+      border-bottom: 1px solid #000000;
+      margin-bottom: 20px;
+    }
+  }
+  .view-more {
+    color: #4452fe;
+    display: flex;
+    justify-content: flex-end;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .input {
+    .sub-input {
+      background: #efefef;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+      padding: 10px 20px;
+      height: 55px;
+      &::placeholder {
+        color: #5c5c5c;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "DM Sans";
+      }
+    }
+    .sub {
+      background: #4452fe;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: bold;
+      width: 100%;
+      height: 60px;
+      border-radius: 5px;
+    }
+  }
+}

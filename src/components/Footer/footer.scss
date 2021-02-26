@@ -1,0 +1,19 @@
+.footer {
+    background: #F2F2F2;
+    .socials {
+        a {
+            font-weight: 600;
+            color: #828282;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
+    .about {
+        text-align: center !important;
+    }
+}
