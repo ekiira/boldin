@@ -4,9 +4,14 @@ import spaceman from "../../../assets/images/spaceman (1).svg";
 import rocket from "../../../assets/images/rocket.png";
 import scroll from "../../../assets/images/scroll.svg";
 
-function Home() {
+function Home({ checkNavMenu }) {
   return (
-    <div className="home ">
+    <div
+      className={`home d-flex align-items-center pb-5 pb-md-1
+     ${checkNavMenu === true ? `slide-left` : `slide-right`} 
+
+     `}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-12 py-4 py-lg-0 w-100">
@@ -18,9 +23,11 @@ function Home() {
                     <br /> <span className="font-weight-bold">bold ideas</span>
                   </p>
                 </div>
-                <div>
-                  <p>We power bold innovations for individuals and business</p>
-                  <div>
+                <div className="sub-intro">
+                  <p className="mb-4">
+                    We power bold innovations for individuals and business
+                  </p>
+                  <div className="mt-3">
                     <button className="btn get-strtd">
                       Get Started
                       <img
@@ -43,11 +50,11 @@ function Home() {
           </div>
         </div>
         <div className="scroll text-center mt-2 mt-lg-5">
-         <a href='#services'>
-         <img src={scroll} alt="scroll-icon" />
-          <br />
-          <span>Scroll down</span>
-         </a>
+          <a href="#services">
+            <img src={scroll} alt="scroll-icon" />
+            <br />
+            <span>Scroll down</span>
+          </a>
         </div>
       </div>
     </div>

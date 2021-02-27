@@ -13,7 +13,7 @@ function Services() {
     <div className="services py-5" id="services">
       <div className="container py-5">
         <div className="row pb-5">
-          <div className="col-md-7" data-aos="fade-right">
+          <div className="col-md-6" data-aos="fade-right">
             <p className="title">Our Services</p>
             <p className="text">
               Excellently built products that perform at scale{" "}

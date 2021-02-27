@@ -37,6 +37,12 @@
   }
 }
 
+.service-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 .splide__arrow {
   position: absolute;
   z-index: 1;
@@ -47,8 +53,11 @@
   background: transparent !important;
 }
 
-.service-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: bold;
+.splide__arrow svg {
+  width: 2.3em !important;
+  height: 2.3em !important;
+  overflow: inherit;
+  opacity: 0.3;
 }
+
+

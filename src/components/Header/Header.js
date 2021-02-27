@@ -22,7 +22,7 @@ function Header({ setOpenRequestForm, setNavMenu }) {
             >
               Work with us{" "}
               <span>
-                <img src={rocket} alt="rocket" />
+                <img src={rocket} alt="rocket" className='header' />
               </span>
             </Nav.Item>
             <Nav.Item

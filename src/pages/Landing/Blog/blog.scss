@@ -35,6 +35,14 @@
         font-size: 15px;
         font-family: "DM Sans";
       }
+      &:focus {
+        outline: none !important;
+        box-shadow: none;
+      }
+      &:focus-within {
+        outline: none !important;
+        box-shadow: none;
+      }
     }
     .sub {
       background: #4452fe;
@@ -44,12 +52,10 @@
       width: 100%;
       height: 60px;
       border-radius: 5px;
-      border: 1px solid #4452fe;
-
+      
       &:hover {
-        background-color: #fff;
-        color: #4452fe;
-        border: 1px solid #4452fe;
+        color: #fff;
+        background-color: #4f5dfc;
       }
     }
   }

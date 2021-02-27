@@ -1,34 +1,32 @@
 .home {
-  max-height: 100vh;
+  font-family: "DM Sans Light";
+  min-height: 100vh;
   width: 100%;
   background: #fff url("../../../assets/images/stars-bg.png") no-repeat;
   background-size: cover;
   margin-top: 50px;
 
-  animation-name: slideInUp;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-
   .intro {
     p {
       font-size: 70px;
-      line-height: normal;
+      line-height: 1.3;
     }
+  }
+
+  .sub-intro {
+    font-size: 32px;
   }
   .get-strtd {
     background: #4452fe;
-    font-size: 16px;
+    font-size: 17px;
     color: #ffffff;
     font-weight: bold;
     width: 200px;
-    height: 60px;
-    border-radius: 0;
-    border: 1px solid #4452fe;
+    height: 55px;
 
     &:hover {
-      background-color: #fff;
-      color: #4452fe;
-      border: 1px solid #4452fe;
+      color: #fff;
+      background-color: #4f5dfc;
     }
   }
 }
@@ -51,15 +49,66 @@
   }
 }
 
-@keyframes slideInUp {
+.slide-right {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.slide-left {
+  animation-name: slideInLeft;
+  -webkit-animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInRight {
   0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
     visibility: visible;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -82,8 +131,6 @@
   .home {
     text-align: center;
     background-size: contain;
-    min-height: 100vh;
-    max-height: none;
     .intro {
       p {
         font-size: 50px;

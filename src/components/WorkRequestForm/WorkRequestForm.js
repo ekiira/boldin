@@ -7,10 +7,10 @@ import logo from "../../assets/images/logo-w.svg";
 import close from "../../assets/images/close.svg";
 import emoji from "../../assets/images/🤩.png";
 
-function WorkRequest({setOpenRequestForm}) {
+function WorkRequest({ setOpenRequestForm, setCheckNavMenu }) {
   return (
     <div className="workRequest">
-      <div className="container">
+      <div className="container-fluid">
         <div className="head py-4 d-flex justify-content-between w-100">
           <div>
             <button className="btn">
@@ -18,7 +18,13 @@ function WorkRequest({setOpenRequestForm}) {
             </button>
           </div>
           <div>
-            <button className="btn" onClick={() => setOpenRequestForm(false)}>
+            <button
+              className="btn"
+              onClick={() => {
+                setOpenRequestForm(false);
+                setCheckNavMenu(false);
+              }}
+            >
               <img src={close} alt="close" />
             </button>
           </div>
@@ -31,7 +37,13 @@ function WorkRequest({setOpenRequestForm}) {
                 <img src={emoji} alt="emoji" className="img-fluid" />
               </span>
             </p>
-
+            <p className="email-text">
+              Complete the form or email{" "}
+              <a href="hello@boldin.co" className="email">
+                hello@boldin.co
+              </a>
+              <img src={rocket} alt="rocket" className="header img-fluid" />
+            </p>
             <div className="row">
               <div className="col-md-9">
                 <Form>
@@ -109,7 +121,7 @@ function WorkRequest({setOpenRequestForm}) {
                       <img
                         src={rocket}
                         alt="rocket"
-                        className="ml-3 img-fluid"
+                        className="ml-3 img-fluid rocket"
                       />
                     </button>
                   </div>

@@ -12,6 +12,7 @@ import NavMenu from "../../components/Nav/Nav";
 function Landing() {
   const [openRequestForm, setOpenRequestForm] = useState(false);
   const [openNavMenu, setNavMenu] = useState(false);
+  const [checkNavMenu, setCheckNavMenu] = useState(false);
 
   const displayCheck = () => {
     if (openNavMenu || openRequestForm) {
@@ -23,7 +24,7 @@ function Landing() {
             setOpenRequestForm={setOpenRequestForm}
             setNavMenu={setNavMenu}
           />
-          <Home />
+          <Home openNavMenu={openNavMenu} checkNavMenu={checkNavMenu} />
           <Services />
           <Work />
           <Contact />
@@ -37,10 +38,24 @@ function Landing() {
     <div>
       <>
         {openRequestForm ? (
-          <WorkRequest setOpenRequestForm={setOpenRequestForm} />
+          <WorkRequest
+            setOpenRequestForm={setOpenRequestForm}
+            setCheckNavMenu={setCheckNavMenu}
+          />
         ) : null}
       </>
-      <>{openNavMenu ? <NavMenu setNavMenu={setNavMenu} /> : null}</>
+      <>
+        {openNavMenu ? (
+          !openRequestForm ? (
+            <NavMenu
+              openNavMenu={openNavMenu}
+              setNavMenu={setNavMenu}
+              setOpenRequestForm={setOpenRequestForm}
+              setCheckNavMenu={setCheckNavMenu}
+            />
+          ) : null
+        ) : null}
+      </>
 
       {displayCheck()}
     </div>
